@@ -1,0 +1,27 @@
+{
+  "name": "pa11y-poc",
+  "version": "1.0.0",
+  "description": "Exploring different options from pa11y reporting services",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sranka23/pa11y-poc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sranka23/pa11y-poc/issues"
+  },
+  "homepage": "https://github.com/sranka23/pa11y-poc#readme",
+  "dependencies": {
+    "save-dev": "0.0.1-security"
+  },
+  "devDependencies": {
+    "pa11y": "^5.3.0",
+    "pa11y-reporter-html": "^2.0.0",
+    "puppeteer": "^5.2.1"
+  }
+}
