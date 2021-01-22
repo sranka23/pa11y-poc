@@ -4,7 +4,7 @@ const pa11y = require("pa11y");
 const htmlReporter = require("pa11y-reporter-html");
 const templateMarkup = require("./customMarkup");
 
-runExample("https://www.eiu.com/viewswire/index", "viewswire-home");
+runExample("https://google.com", "google home");
 
 async function runExample(url, key) {
   //currently running only html codesniffer, to be integrated with axe-core

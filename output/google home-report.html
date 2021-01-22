@@ -1,0 +1,624 @@
+
+<style>
+    select{
+      background: #eee;
+      padding: 15px 0;
+      width: 200px;
+      font-size: 18px;
+      margin: 0 auto;
+      display: block;
+      border: 0;
+      border-bottom: 1px solid #000;
+    }
+    .top-wrapper{
+      background: #eee;
+    }
+    .item-container{
+      max-width: 800px;
+      margin: 0 auto;
+      margin-bottom: 50px;
+    }
+</style>
+<script>
+    function changeViewClass(classname, css) {
+      var divsToHide = document.getElementsByClassName(classname); 
+      for(var i = 0; i < divsToHide.length; i++){
+          divsToHide[i].style.display = css; 
+      }
+    }
+    function handlechange(){
+      const e = document.getElementById("viewFilter");
+      changeViewClass("result", "none")
+      changeViewClass(e.options[e.selectedIndex].value, "block")
+      changeViewClass("count", "inline-block")
+      
+    }
+    window.onload = function(){
+      const e = document.getElementById("viewFilter");
+      e.addEventListener("change", handlechange);
+    }
+</script>
+<div class="top-wrapper">
+  <div class="item-container">
+    <select id="viewFilter">
+        <option value="result">All</option>
+        <option value="error">Error</option>
+        <option value="notice">Notices</option>
+        <option value="warning">Warnings</option>
+    </select>
+  </div>
+</div><!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8"/>
+	<title>Accessibility Report For "https://www.google.com/#spf=1611330600826" (Fri Jan 22 2021 21:20:09 GMT+0530 (India Standard Time))</title>
+
+	<style>
+
+		html, body {
+			margin: 0;
+			padding: 0;
+			background-color: #fff;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 16px;
+			line-height: 22px;
+			color: #333;
+		}
+		li {
+			margin-bottom: 15px;
+		}
+		h1, h2, p, pre, ul {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		h1 {
+			margin-bottom: 10px;
+			font-size: 24px;
+			line-height: 24px;
+		}
+		h2 {
+			font-size: 16px;
+		}
+		pre {
+			white-space: pre-wrap;
+			overflow: auto;
+		}
+
+		.page {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 25px;
+		}
+
+		.counts {
+			margin-top: 30px;
+			font-size: 20px;
+		}
+		.count {
+			display: inline-block;
+			padding: 5px;
+			border-radius: 5px;
+			border: 1px solid #eee;
+		}
+
+		.clean-list {
+			margin-left: 0;
+			padding-left: 0;
+			list-style: none;
+		}
+		.results-list {
+			margin-top: 30px;
+		}
+
+		.result {
+			padding: 10px;
+			border-radius: 5px;
+			border: 1px solid #eee;
+		}
+		.error {
+			background-color: #fdd;
+			border-color: #ff9696;
+		}
+		.warning {
+			background-color: #ffd;
+			border-color: #e7c12b;
+		}
+		.notice {
+			background-color: #eef4ff;
+			border-color: #b6d0ff;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<div class="page">
+
+		<h1>Accessibility Report For "https://www.google.com/#spf=1611330600826"</h1>
+		<p>Generated at: Fri Jan 22 2021 21:20:09 GMT+0530 (India Standard Time)</p>
+
+		<p class="counts">
+			<span class="count error">3 errors</span>
+			<span class="count warning">6 warnings</span>
+			<span class="count notice">85 notices</span>
+		</p>
+
+		<ul class="clean-list results-list">
+			<li class="result notice">
+				<h2>Notice: Check that the title element describes the document.</h2>
+				<p>WCAG2AA.Principle2.Guideline2_4.2_4_2.H25.2</p>
+				<pre>&lt;title&gt;Google&lt;/title&gt; (select with "html &gt; head &gt; title")</pre>
+			</li>
+			<li class="result warning">
+				<h2>Warning: Check that this element has an inherited foreground colour to complement the corresponding inline background colour or image.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_4.1_4_3_F24.F24.BGColour</p>
+				<pre>&lt;body bgcolor=&quot;#fff&quot;&gt;&lt;script nonce=&quot;RI0Vy9sbtgCDk6yZ...&lt;/body&gt; (select with "html &gt; body")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the link text combined with programmatically determined link context identifies the purpose of the link.</h2>
+				<p>WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81</p>
+				<pre>&lt;a class=&quot;gb1&quot; href=&quot;https://www.google.co.in/imghp?hl=en&amp;amp;tab=wi&quot;&gt;Images&lt;/a&gt; (select with "#gbar &gt; nobr &gt; a:nth-child(2)")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the link text combined with programmatically determined link context identifies the purpose of the link.</h2>
+				<p>WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81</p>
+				<pre>&lt;a class=&quot;gb1&quot; href=&quot;https://maps.google.co.in/maps?hl=en&amp;amp;tab=wl&quot;&gt;Maps&lt;/a&gt; (select with "#gbar &gt; nobr &gt; a:nth-child(3)")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the link text combined with programmatically determined link context identifies the purpose of the link.</h2>
+				<p>WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81</p>
+				<pre>&lt;a class=&quot;gb1&quot; href=&quot;https://play.google.com/?hl=en&amp;amp;tab=w8&quot;&gt;Play&lt;/a&gt; (select with "#gbar &gt; nobr &gt; a:nth-child(4)")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the link text combined with programmatically determined link context identifies the purpose of the link.</h2>
+				<p>WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81</p>
+				<pre>&lt;a class=&quot;gb1&quot; href=&quot;https://www.youtube.com/?gl=IN&amp;amp;tab=w1&quot;&gt;YouTube&lt;/a&gt; (select with "#gbar &gt; nobr &gt; a:nth-child(5)")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the link text combined with programmatically determined link context identifies the purpose of the link.</h2>
+				<p>WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81</p>
+				<pre>&lt;a class=&quot;gb1&quot; href=&quot;https://news.google.com/?tab=wn&quot;&gt;News&lt;/a&gt; (select with "#gbar &gt; nobr &gt; a:nth-child(6)")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the link text combined with programmatically determined link context identifies the purpose of the link.</h2>
+				<p>WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81</p>
+				<pre>&lt;a class=&quot;gb1&quot; href=&quot;https://mail.google.com/mail/?tab=wm&quot;&gt;Gmail&lt;/a&gt; (select with "#gbar &gt; nobr &gt; a:nth-child(7)")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the link text combined with programmatically determined link context identifies the purpose of the link.</h2>
+				<p>WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81</p>
+				<pre>&lt;a class=&quot;gb1&quot; href=&quot;https://drive.google.com/?tab=wo&quot;&gt;Drive&lt;/a&gt; (select with "#gbar &gt; nobr &gt; a:nth-child(8)")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the link text combined with programmatically determined link context identifies the purpose of the link.</h2>
+				<p>WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81</p>
+				<pre>&lt;a class=&quot;gb1&quot; style=&quot;text-decoration:none&quot; href=&quot;https://www.google.co.in/intl/en/about/products?tab=wh&quot;&gt;&lt;u&gt;More&lt;/u&gt; »&lt;/a&gt; (select with "#gbar &gt; nobr &gt; a:nth-child(9)")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the link text combined with programmatically determined link context identifies the purpose of the link.</h2>
+				<p>WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81</p>
+				<pre>&lt;a href=&quot;http://www.google.co.in/history/optout?hl=en&quot; class=&quot;gb4&quot;&gt;Web History&lt;/a&gt; (select with "#guser &gt; nobr &gt; a:nth-child(4)")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the link text combined with programmatically determined link context identifies the purpose of the link.</h2>
+				<p>WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81</p>
+				<pre>&lt;a href=&quot;/preferences?hl=en&quot; class=&quot;gb4&quot;&gt;Settings&lt;/a&gt; (select with "#guser &gt; nobr &gt; a:nth-child(5)")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the link text combined with programmatically determined link context identifies the purpose of the link.</h2>
+				<p>WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81</p>
+				<pre>&lt;a target=&quot;_top&quot; id=&quot;gb_70&quot; href=&quot;https://accounts.google.com/ServiceLogin?hl=en&amp;amp;passive=true&amp;amp;continue=https://www.google.com/&amp;amp;ec=GAZAAQ&quot; class=&quot;gb4&quot;&gt;Sign in&lt;/a&gt; (select with "#gb_70")</pre>
+			</li>
+			<li class="result error">
+				<h2>Error: Presentational markup used that has become obsolete in HTML5.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_3.1_3_1.H49.Center</p>
+				<pre>&lt;center&gt;&lt;br clear=&quot;all&quot; id=&quot;lgpd&quot;&gt;&lt;div ...&lt;/center&gt; (select with "html &gt; body &gt; center")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Ensure that the img element&#39;s alt text serves the same purpose and presents the same information as the image.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_1.1_1_1.G94.Image</p>
+				<pre>&lt;img alt=&quot;Google&quot; height=&quot;92&quot; src=&quot;/images/branding/googlelogo/1x/googlelogo_white_background_color_272x92dp.png&quot; style=&quot;padding:28px 0 14px&quot; width=&quot;272&quot; id=&quot;hplogo&quot;&gt; (select with "#hplogo")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_1.1_1_1.G73,G74</p>
+				<pre>&lt;img alt=&quot;Google&quot; height=&quot;92&quot; src=&quot;/images/branding/googlelogo/1x/googlelogo_white_background_color_272x92dp.png&quot; style=&quot;padding:28px 0 14px&quot; width=&quot;272&quot; id=&quot;hplogo&quot;&gt; (select with "#hplogo")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: If an input error is automatically detected in this form, check that the item(s) in error are identified and the error(s) are described to the user in text.</h2>
+				<p>WCAG2AA.Principle3.Guideline3_3.3_3_1.G83,G84,G85</p>
+				<pre>&lt;form action=&quot;/search&quot; name=&quot;f&quot;&gt;&lt;table cellpadding=&quot;0&quot; cellspac...&lt;/form&gt; (select with "html &gt; body &gt; center &gt; form")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that descriptive labels or instructions (including for required fields) are provided for user input in this form.</h2>
+				<p>WCAG2AA.Principle3.Guideline3_3.3_3_2.G131,G89,G184,H90</p>
+				<pre>&lt;form action=&quot;/search&quot; name=&quot;f&quot;&gt;&lt;table cellpadding=&quot;0&quot; cellspac...&lt;/form&gt; (select with "html &gt; body &gt; center &gt; form")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that this form provides suggested corrections to errors in user input, unless it would jeopardize the security or purpose of the content.</h2>
+				<p>WCAG2AA.Principle3.Guideline3_3.3_3_3.G177</p>
+				<pre>&lt;form action=&quot;/search&quot; name=&quot;f&quot;&gt;&lt;table cellpadding=&quot;0&quot; cellspac...&lt;/form&gt; (select with "html &gt; body &gt; center &gt; form")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: If this form would bind a user to a financial or legal commitment, modify/delete user-controllable data, or submit test responses, ensure that submissions are either reversible, checked for input errors, and/or confirmed by the user.</h2>
+				<p>WCAG2AA.Principle3.Guideline3_3.3_3_4.G98,G99,G155,G164,G168.LegalForms</p>
+				<pre>&lt;form action=&quot;/search&quot; name=&quot;f&quot;&gt;&lt;table cellpadding=&quot;0&quot; cellspac...&lt;/form&gt; (select with "html &gt; body &gt; center &gt; form")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: This table appears to be a layout table. If it is meant to instead be a data table, ensure header cells are identified using th elements.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_3.1_3_1.LayoutTable</p>
+				<pre>&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr valign=&quot;top&quot;&gt;&lt;td wid...&lt;/table&gt; (select with "html &gt; body &gt; center &gt; form &gt; table")</pre>
+			</li>
+			<li class="result error">
+				<h2>Error: Align attributes .</h2>
+				<p>WCAG2AA.Principle1.Guideline1_3.1_3_1.H49.AlignAttr</p>
+				<pre>&lt;td align=&quot;center&quot; nowrap=&quot;&quot;&gt;&lt;input name=&quot;ie&quot; value=&quot;ISO-885...&lt;/td&gt; (select with "html &gt; body &gt; center &gt; form &gt; table &gt; tbody &gt; tr &gt; td:nth-child(2)")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the input field serves a purpose identified in the Input Purposes for User Interface Components section; and that the content is implemented using technologies with support for identifying the expected meaning for form input data.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_3.1_3_5.H98</p>
+				<pre>&lt;input name=&quot;ie&quot; value=&quot;ISO-8859-1&quot; type=&quot;hidden&quot;&gt; (select with "html &gt; body &gt; center &gt; form &gt; table &gt; tbody &gt; tr &gt; td:nth-child(2) &gt; input:nth-child(1)")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that a change of context does not occur when this input field receives focus.</h2>
+				<p>WCAG2AA.Principle3.Guideline3_2.3_2_1.G107</p>
+				<pre>&lt;input name=&quot;ie&quot; value=&quot;ISO-8859-1&quot; type=&quot;hidden&quot;&gt; (select with "html &gt; body &gt; center &gt; form &gt; table &gt; tbody &gt; tr &gt; td:nth-child(2) &gt; input:nth-child(1)")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the input field serves a purpose identified in the Input Purposes for User Interface Components section; and that the content is implemented using technologies with support for identifying the expected meaning for form input data.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_3.1_3_5.H98</p>
+				<pre>&lt;input value=&quot;en-IN&quot; name=&quot;hl&quot; type=&quot;hidden&quot;&gt; (select with "html &gt; body &gt; center &gt; form &gt; table &gt; tbody &gt; tr &gt; td:nth-child(2) &gt; input:nth-child(2)")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that a change of context does not occur when this input field receives focus.</h2>
+				<p>WCAG2AA.Principle3.Guideline3_2.3_2_1.G107</p>
+				<pre>&lt;input value=&quot;en-IN&quot; name=&quot;hl&quot; type=&quot;hidden&quot;&gt; (select with "html &gt; body &gt; center &gt; form &gt; table &gt; tbody &gt; tr &gt; td:nth-child(2) &gt; input:nth-child(2)")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the input field serves a purpose identified in the Input Purposes for User Interface Components section; and that the content is implemented using technologies with support for identifying the expected meaning for form input data.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_3.1_3_5.H98</p>
+				<pre>&lt;input name=&quot;source&quot; type=&quot;hidden&quot; value=&quot;hp&quot;&gt; (select with "html &gt; body &gt; center &gt; form &gt; table &gt; tbody &gt; tr &gt; td:nth-child(2) &gt; input:nth-child(3)")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that a change of context does not occur when this input field receives focus.</h2>
+				<p>WCAG2AA.Principle3.Guideline3_2.3_2_1.G107</p>
+				<pre>&lt;input name=&quot;source&quot; type=&quot;hidden&quot; value=&quot;hp&quot;&gt; (select with "html &gt; body &gt; center &gt; form &gt; table &gt; tbody &gt; tr &gt; td:nth-child(2) &gt; input:nth-child(3)")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the input field serves a purpose identified in the Input Purposes for User Interface Components section; and that the content is implemented using technologies with support for identifying the expected meaning for form input data.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_3.1_3_5.H98</p>
+				<pre>&lt;input name=&quot;biw&quot; type=&quot;hidden&quot;&gt; (select with "html &gt; body &gt; center &gt; form &gt; table &gt; tbody &gt; tr &gt; td:nth-child(2) &gt; input:nth-child(4)")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that a change of context does not occur when this input field receives focus.</h2>
+				<p>WCAG2AA.Principle3.Guideline3_2.3_2_1.G107</p>
+				<pre>&lt;input name=&quot;biw&quot; type=&quot;hidden&quot;&gt; (select with "html &gt; body &gt; center &gt; form &gt; table &gt; tbody &gt; tr &gt; td:nth-child(2) &gt; input:nth-child(4)")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the input field serves a purpose identified in the Input Purposes for User Interface Components section; and that the content is implemented using technologies with support for identifying the expected meaning for form input data.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_3.1_3_5.H98</p>
+				<pre>&lt;input name=&quot;bih&quot; type=&quot;hidden&quot;&gt; (select with "html &gt; body &gt; center &gt; form &gt; table &gt; tbody &gt; tr &gt; td:nth-child(2) &gt; input:nth-child(5)")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that a change of context does not occur when this input field receives focus.</h2>
+				<p>WCAG2AA.Principle3.Guideline3_2.3_2_1.G107</p>
+				<pre>&lt;input name=&quot;bih&quot; type=&quot;hidden&quot;&gt; (select with "html &gt; body &gt; center &gt; form &gt; table &gt; tbody &gt; tr &gt; td:nth-child(2) &gt; input:nth-child(5)")</pre>
+			</li>
+			<li class="result warning">
+				<h2>Warning: Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_4.1_4_3_F24.F24.FGColour</p>
+				<pre>&lt;input class=&quot;lst&quot; style=&quot;margin: 0px; padding: 5px 8px 0px 6px; vertical-align: top; color: rgb(0, 0, 0); outline: none;&quot; autocomplete=&quot;off&quot; value=&quot;&quot; title=&quot;Google Search&quot; maxlength=&quot;2048&quot; name=&quot;q&quot; size=&quot;57&quot; dir=&quot;ltr&quot; spellcheck=&quot;false&quot;&gt; (select with "html &gt; body &gt; center &gt; form &gt; table &gt; tbody &gt; tr &gt; td:nth-child(2) &gt; div &gt; input")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the input field serves a purpose identified in the Input Purposes for User Interface Components section; and that the content is implemented using technologies with support for identifying the expected meaning for form input data.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_3.1_3_5.H98</p>
+				<pre>&lt;input class=&quot;lst&quot; style=&quot;margin: 0px; padding: 5px 8px 0px 6px; vertical-align: top; color: rgb(0, 0, 0); outline: none;&quot; autocomplete=&quot;off&quot; value=&quot;&quot; title=&quot;Google Search&quot; maxlength=&quot;2048&quot; name=&quot;q&quot; size=&quot;57&quot; dir=&quot;ltr&quot; spellcheck=&quot;false&quot;&gt; (select with "html &gt; body &gt; center &gt; form &gt; table &gt; tbody &gt; tr &gt; td:nth-child(2) &gt; div &gt; input")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that a change of context does not occur when this input field receives focus.</h2>
+				<p>WCAG2AA.Principle3.Guideline3_2.3_2_1.G107</p>
+				<pre>&lt;input class=&quot;lst&quot; style=&quot;margin: 0px; padding: 5px 8px 0px 6px; vertical-align: top; color: rgb(0, 0, 0); outline: none;&quot; autocomplete=&quot;off&quot; value=&quot;&quot; title=&quot;Google Search&quot; maxlength=&quot;2048&quot; name=&quot;q&quot; size=&quot;57&quot; dir=&quot;ltr&quot; spellcheck=&quot;false&quot;&gt; (select with "html &gt; body &gt; center &gt; form &gt; table &gt; tbody &gt; tr &gt; td:nth-child(2) &gt; div &gt; input")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the input field serves a purpose identified in the Input Purposes for User Interface Components section; and that the content is implemented using technologies with support for identifying the expected meaning for form input data.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_3.1_3_5.H98</p>
+				<pre>&lt;input class=&quot;lsb&quot; value=&quot;Google Search&quot; name=&quot;btnG&quot; type=&quot;submit&quot;&gt; (select with "html &gt; body &gt; center &gt; form &gt; table &gt; tbody &gt; tr &gt; td:nth-child(2) &gt; span:nth-child(8) &gt; span &gt; input")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that a change of context does not occur when this input field receives focus.</h2>
+				<p>WCAG2AA.Principle3.Guideline3_2.3_2_1.G107</p>
+				<pre>&lt;input class=&quot;lsb&quot; value=&quot;Google Search&quot; name=&quot;btnG&quot; type=&quot;submit&quot;&gt; (select with "html &gt; body &gt; center &gt; form &gt; table &gt; tbody &gt; tr &gt; td:nth-child(2) &gt; span:nth-child(8) &gt; span &gt; input")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the input field serves a purpose identified in the Input Purposes for User Interface Components section; and that the content is implemented using technologies with support for identifying the expected meaning for form input data.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_3.1_3_5.H98</p>
+				<pre>&lt;input class=&quot;lsb&quot; id=&quot;tsuid1&quot; value=&quot;I&#39;m Feeling Lucky&quot; name=&quot;btnI&quot; type=&quot;submit&quot;&gt; (select with "#tsuid1")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that a change of context does not occur when this input field receives focus.</h2>
+				<p>WCAG2AA.Principle3.Guideline3_2.3_2_1.G107</p>
+				<pre>&lt;input class=&quot;lsb&quot; id=&quot;tsuid1&quot; value=&quot;I&#39;m Feeling Lucky&quot; name=&quot;btnI&quot; type=&quot;submit&quot;&gt; (select with "#tsuid1")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the input field serves a purpose identified in the Input Purposes for User Interface Components section; and that the content is implemented using technologies with support for identifying the expected meaning for form input data.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_3.1_3_5.H98</p>
+				<pre>&lt;input value=&quot;AINFCbYAAAAAYAsCOcZTcFyAU7kzlCpZ5FQIwDHena1r&quot; name=&quot;iflsig&quot; type=&quot;hidden&quot;&gt; (select with "html &gt; body &gt; center &gt; form &gt; table &gt; tbody &gt; tr &gt; td:nth-child(2) &gt; span:nth-child(9) &gt; span &gt; input:nth-child(3)")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that a change of context does not occur when this input field receives focus.</h2>
+				<p>WCAG2AA.Principle3.Guideline3_2.3_2_1.G107</p>
+				<pre>&lt;input value=&quot;AINFCbYAAAAAYAsCOcZTcFyAU7kzlCpZ5FQIwDHena1r&quot; name=&quot;iflsig&quot; type=&quot;hidden&quot;&gt; (select with "html &gt; body &gt; center &gt; form &gt; table &gt; tbody &gt; tr &gt; td:nth-child(2) &gt; span:nth-child(9) &gt; span &gt; input:nth-child(3)")</pre>
+			</li>
+			<li class="result error">
+				<h2>Error: Align attributes .</h2>
+				<p>WCAG2AA.Principle1.Guideline1_3.1_3_1.H49.AlignAttr</p>
+				<pre>&lt;td class=&quot;fl sblc&quot; align=&quot;left&quot; nowrap=&quot;&quot; width=&quot;25%&quot;&gt;&lt;a href=&quot;/advanced_search?hl=en...&lt;/td&gt; (select with "html &gt; body &gt; center &gt; form &gt; table &gt; tbody &gt; tr &gt; td:nth-child(3)")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the link text combined with programmatically determined link context identifies the purpose of the link.</h2>
+				<p>WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81</p>
+				<pre>&lt;a href=&quot;/advanced_search?hl=en-IN&amp;amp;authuser=0&quot;&gt;Advanced search&lt;/a&gt; (select with "html &gt; body &gt; center &gt; form &gt; table &gt; tbody &gt; tr &gt; td:nth-child(3) &gt; a")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the input field serves a purpose identified in the Input Purposes for User Interface Components section; and that the content is implemented using technologies with support for identifying the expected meaning for form input data.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_3.1_3_5.H98</p>
+				<pre>&lt;input id=&quot;gbv&quot; name=&quot;gbv&quot; type=&quot;hidden&quot; value=&quot;2&quot;&gt; (select with "#gbv")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that a change of context does not occur when this input field receives focus.</h2>
+				<p>WCAG2AA.Principle3.Guideline3_2.3_2_1.G107</p>
+				<pre>&lt;input id=&quot;gbv&quot; name=&quot;gbv&quot; type=&quot;hidden&quot; value=&quot;2&quot;&gt; (select with "#gbv")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the input field serves a purpose identified in the Input Purposes for User Interface Components section; and that the content is implemented using technologies with support for identifying the expected meaning for form input data.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_3.1_3_5.H98</p>
+				<pre>&lt;input type=&quot;hidden&quot; name=&quot;oq&quot;&gt; (select with "html &gt; body &gt; center &gt; form &gt; input:nth-child(4)")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that a change of context does not occur when this input field receives focus.</h2>
+				<p>WCAG2AA.Principle3.Guideline3_2.3_2_1.G107</p>
+				<pre>&lt;input type=&quot;hidden&quot; name=&quot;oq&quot;&gt; (select with "html &gt; body &gt; center &gt; form &gt; input:nth-child(4)")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the input field serves a purpose identified in the Input Purposes for User Interface Components section; and that the content is implemented using technologies with support for identifying the expected meaning for form input data.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_3.1_3_5.H98</p>
+				<pre>&lt;input type=&quot;hidden&quot; name=&quot;gs_l&quot;&gt; (select with "html &gt; body &gt; center &gt; form &gt; input:nth-child(5)")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that a change of context does not occur when this input field receives focus.</h2>
+				<p>WCAG2AA.Principle3.Guideline3_2.3_2_1.G107</p>
+				<pre>&lt;input type=&quot;hidden&quot; name=&quot;gs_l&quot;&gt; (select with "html &gt; body &gt; center &gt; form &gt; input:nth-child(5)")</pre>
+			</li>
+			<li class="result warning">
+				<h2>Warning: If this element contains a navigation section, it is recommended that it be marked up as a list.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_3.1_3_1.H48</p>
+				<pre>&lt;div id=&quot;SIvCob&quot;&gt;Google offered in:  &lt;a href=&quot;ht...&lt;/div&gt; (select with "#SIvCob")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the link text combined with programmatically determined link context identifies the purpose of the link.</h2>
+				<p>WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81</p>
+				<pre>&lt;a href=&quot;https://www.google.com/setprefs?sig=0_FeMncp63E4FXqzmCfmwfe6kqQGs%3D&amp;amp;hl=hi&amp;amp;source=homepage&amp;amp;sa=X&amp;amp;ved=0ahUKEwi_p9-g8q_uAhU3xzgGHbijBTQQ2ZgBCAU&quot;&gt;हिन्दी&lt;/a&gt; (select with "#SIvCob &gt; a:nth-child(1)")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the link text combined with programmatically determined link context identifies the purpose of the link.</h2>
+				<p>WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81</p>
+				<pre>&lt;a href=&quot;https://www.google.com/setprefs?sig=0_FeMncp63E4FXqzmCfmwfe6kqQGs%3D&amp;amp;hl=bn&amp;amp;source=homepage&amp;amp;sa=X&amp;amp;ved=0ahUKEwi_p9-g8q_uAhU3xzgGHbijBTQQ2ZgBCAY&quot;&gt;বাংলা&lt;/a&gt; (select with "#SIvCob &gt; a:nth-child(2)")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the link text combined with programmatically determined link context identifies the purpose of the link.</h2>
+				<p>WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81</p>
+				<pre>&lt;a href=&quot;https://www.google.com/setprefs?sig=0_FeMncp63E4FXqzmCfmwfe6kqQGs%3D&amp;amp;hl=te&amp;amp;source=homepage&amp;amp;sa=X&amp;amp;ved=0ahUKEwi_p9-g8q_uAhU3xzgGHbijBTQQ2ZgBCAc&quot;&gt;తెలుగు&lt;/a&gt; (select with "#SIvCob &gt; a:nth-child(3)")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the link text combined with programmatically determined link context identifies the purpose of the link.</h2>
+				<p>WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81</p>
+				<pre>&lt;a href=&quot;https://www.google.com/setprefs?sig=0_FeMncp63E4FXqzmCfmwfe6kqQGs%3D&amp;amp;hl=mr&amp;amp;source=homepage&amp;amp;sa=X&amp;amp;ved=0ahUKEwi_p9-g8q_uAhU3xzgGHbijBTQQ2ZgBCAg&quot;&gt;मराठी&lt;/a&gt; (select with "#SIvCob &gt; a:nth-child(4)")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the link text combined with programmatically determined link context identifies the purpose of the link.</h2>
+				<p>WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81</p>
+				<pre>&lt;a href=&quot;https://www.google.com/setprefs?sig=0_FeMncp63E4FXqzmCfmwfe6kqQGs%3D&amp;amp;hl=ta&amp;amp;source=homepage&amp;amp;sa=X&amp;amp;ved=0ahUKEwi_p9-g8q_uAhU3xzgGHbijBTQQ2ZgBCAk&quot;&gt;தமிழ்&lt;/a&gt; (select with "#SIvCob &gt; a:nth-child(5)")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the link text combined with programmatically determined link context identifies the purpose of the link.</h2>
+				<p>WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81</p>
+				<pre>&lt;a href=&quot;https://www.google.com/setprefs?sig=0_FeMncp63E4FXqzmCfmwfe6kqQGs%3D&amp;amp;hl=gu&amp;amp;source=homepage&amp;amp;sa=X&amp;amp;ved=0ahUKEwi_p9-g8q_uAhU3xzgGHbijBTQQ2ZgBCAo&quot;&gt;ગુજરાતી&lt;/a&gt; (select with "#SIvCob &gt; a:nth-child(6)")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the link text combined with programmatically determined link context identifies the purpose of the link.</h2>
+				<p>WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81</p>
+				<pre>&lt;a href=&quot;https://www.google.com/setprefs?sig=0_FeMncp63E4FXqzmCfmwfe6kqQGs%3D&amp;amp;hl=kn&amp;amp;source=homepage&amp;amp;sa=X&amp;amp;ved=0ahUKEwi_p9-g8q_uAhU3xzgGHbijBTQQ2ZgBCAs&quot;&gt;ಕನ್ನಡ&lt;/a&gt; (select with "#SIvCob &gt; a:nth-child(7)")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the link text combined with programmatically determined link context identifies the purpose of the link.</h2>
+				<p>WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81</p>
+				<pre>&lt;a href=&quot;https://www.google.com/setprefs?sig=0_FeMncp63E4FXqzmCfmwfe6kqQGs%3D&amp;amp;hl=ml&amp;amp;source=homepage&amp;amp;sa=X&amp;amp;ved=0ahUKEwi_p9-g8q_uAhU3xzgGHbijBTQQ2ZgBCAw&quot;&gt;മലയാളം&lt;/a&gt; (select with "#SIvCob &gt; a:nth-child(8)")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the link text combined with programmatically determined link context identifies the purpose of the link.</h2>
+				<p>WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81</p>
+				<pre>&lt;a href=&quot;https://www.google.com/setprefs?sig=0_FeMncp63E4FXqzmCfmwfe6kqQGs%3D&amp;amp;hl=pa&amp;amp;source=homepage&amp;amp;sa=X&amp;amp;ved=0ahUKEwi_p9-g8q_uAhU3xzgGHbijBTQQ2ZgBCA0&quot;&gt;ਪੰਜਾਬੀ&lt;/a&gt; (select with "#SIvCob &gt; a:nth-child(9)")</pre>
+			</li>
+			<li class="result warning">
+				<h2>Warning: If this element contains a navigation section, it is recommended that it be marked up as a list.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_3.1_3_1.H48</p>
+				<pre>&lt;div style=&quot;margin:19px auto;text-align:center&quot; id=&quot;WqQANb&quot;&gt;&lt;a href=&quot;/intl/en/ads/&quot;&gt;Adverti...&lt;/div&gt; (select with "#WqQANb")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the link text combined with programmatically determined link context identifies the purpose of the link.</h2>
+				<p>WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81</p>
+				<pre>&lt;a href=&quot;/intl/en/ads/&quot;&gt;Advertising&amp;nbsp;Programs&lt;/a&gt; (select with "#WqQANb &gt; a:nth-child(1)")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the link text combined with programmatically determined link context identifies the purpose of the link.</h2>
+				<p>WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81</p>
+				<pre>&lt;a href=&quot;http://www.google.co.in/services/&quot;&gt;Business Solutions&lt;/a&gt; (select with "#WqQANb &gt; a:nth-child(2)")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the link text combined with programmatically determined link context identifies the purpose of the link.</h2>
+				<p>WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81</p>
+				<pre>&lt;a href=&quot;/intl/en/about.html&quot;&gt;About Google&lt;/a&gt; (select with "#WqQANb &gt; a:nth-child(3)")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the link text combined with programmatically determined link context identifies the purpose of the link.</h2>
+				<p>WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81</p>
+				<pre>&lt;a href=&quot;https://www.google.com/setprefdomain?prefdom=IN&amp;amp;prev=https://www.google.co.in/&amp;amp;sig=K_A0Uore2sB3D_kO0tPy4s4RwlhU0%3D&quot;&gt;Google.co.in&lt;/a&gt; (select with "#WqQANb &gt; a:nth-child(4)")</pre>
+			</li>
+			<li class="result warning">
+				<h2>Warning: Check that this element has an inherited background colour or image to complement the corresponding inline foreground colour.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_4.1_4_3_F24.F24.FGColour</p>
+				<pre>&lt;p style=&quot;font-size:8pt;color:#70757a&quot;&gt;© 2021 - &lt;a href=&quot;/intl/en/poli...&lt;/p&gt; (select with "#footer &gt; p")</pre>
+			</li>
+			<li class="result warning">
+				<h2>Warning: If this element contains a navigation section, it is recommended that it be marked up as a list.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_3.1_3_1.H48</p>
+				<pre>&lt;p style=&quot;font-size:8pt;color:#70757a&quot;&gt;© 2021 - &lt;a href=&quot;/intl/en/poli...&lt;/p&gt; (select with "#footer &gt; p")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the link text combined with programmatically determined link context identifies the purpose of the link.</h2>
+				<p>WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81</p>
+				<pre>&lt;a href=&quot;/intl/en/policies/privacy/&quot;&gt;Privacy&lt;/a&gt; (select with "#footer &gt; p &gt; a:nth-child(1)")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the link text combined with programmatically determined link context identifies the purpose of the link.</h2>
+				<p>WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81</p>
+				<pre>&lt;a href=&quot;/intl/en/policies/terms/&quot;&gt;Terms&lt;/a&gt; (select with "#footer &gt; p &gt; a:nth-child(2)")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: This table appears to be a layout table. If it is meant to instead be a data table, ensure header cells are identified using th elements.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_3.1_3_1.LayoutTable</p>
+				<pre>&lt;table cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; class=&quot;gstl_0 gssb_c&quot; style=&quot;width: 514px; display: none; top: 234px; left: 383px; position: absolute;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gssb_f&quot;&gt;&lt;...&lt;/table&gt; (select with "html &gt; body &gt; table")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the content is ordered in a meaningful sequence when linearised, such as when style sheets are disabled.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_3.1_3_2.G57</p>
+				<pre> (select with "")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Where instructions are provided for understanding the content, do not rely on sensory characteristics alone (such as shape, size or location) to describe objects.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_3.1_3_3.G96</p>
+				<pre> (select with "")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that content does not restrict its view and operation to a single display orientation, such as portrait or landscape, unless a specific display orientation is essential.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_3.1_3_4.</p>
+				<pre> (select with "")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that any information conveyed using colour alone is also available in text, or through other visual cues.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_4.1_4_1.G14,G182</p>
+				<pre> (select with "")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that text can be resized without assistive technology up to 200 percent without loss of content or functionality.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_4.1_4_4.G142</p>
+				<pre> (select with "")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: If the technologies being used can achieve the visual presentation, check that text is used to convey information rather than images of text, except when the image of text is essential to the information being conveyed, or can be visually customised to the user&#39;s requirements.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_4.1_4_5.G140,C22,C30.AALevel</p>
+				<pre> (select with "")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that content can be presented without loss of information or functionality, and without requiring scrolling in two dimensions for:     Vertical scrolling content at a width equivalent to 320 CSS pixels;     Horizontal scrolling content at a height equivalent to 256 CSS pixels;     Except for parts of the content which require two-dimensional layout for usage or meaning.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_4.1_4_10.C32,C31,C33,C38,SCR34,G206</p>
+				<pre> (select with "")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the visual presentation of the following have a contrast ratio of at least 3:1 against adjacent color(s):     User Interface Components: Visual information required to identify user interface components and states, except for inactive components or where the appearance of the component is determined by the user agent and not modified by the author;     Graphical Objects: Parts of graphics required to understand the content, except when a particular presentation of graphics is essential to the information being conveyed.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_4.1_4_11.G195,G207,G18,G145,G174,F78</p>
+				<pre> (select with "")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that no loss of content or functionality occurs by setting all of the following and by changing no other style property:              Line height (line spacing) to at least 1.5 times the font size;         Spacing following paragraphs to at least 2 times the font size;         Letter spacing (tracking) to at least 0.12 times the font size;         Word spacing to at least 0.16 times the font size.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_4.1_4_12.C36,C35</p>
+				<pre> (select with "")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that where receiving and then removing pointer hover or keyboard focus triggers additional content to become visible and then hidden, the following are true:              Dismissable: A mechanism is available to dismiss the additional content without moving pointer hover or keyboard focus, unless the additional content communicates an input error or does not obscure or replace other content;         Hoverable: If pointer hover can trigger the additional content, then the pointer can be moved over the additional content without the additional content disappearing;         Persistent: The additional content remains visible until the hover or focus trigger is removed, the user dismisses it, or its information is no longer valid.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_4.1_4_13.F95</p>
+				<pre> (select with "")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that if a keyboard shortcut is implemented in content using only letter (including upper- and lower-case letters), punctuation, number, or symbol characters, then at least one of the following is true:              Turn off: A mechanism is available to turn the shortcut off;         Remap: A mechanism is available to remap the shortcut to use one or more non-printable keyboard characters (e.g. Ctrl, Alt, etc);         Active only on focus: The keyboard shortcut for a user interface component is only active when that component has focus.     </h2>
+				<p>WCAG2AA.Principle2.Guideline2_1.2_1_4.</p>
+				<pre> (select with "")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: If any part of the content moves, scrolls or blinks for more than 5 seconds, or auto-updates, check that there is a mechanism available to pause, stop, or hide the content.</h2>
+				<p>WCAG2AA.Principle2.Guideline2_2.2_2_2.SCR33,SCR22,G187,G152,G186,G191</p>
+				<pre> (select with "")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that no component of the content flashes more than three times in any 1-second period, or that the size of any flashing area is sufficiently small.</h2>
+				<p>WCAG2AA.Principle2.Guideline2_3.2_3_1.G19,G176</p>
+				<pre> (select with "")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Ensure that any common navigation elements can be bypassed; for instance, by use of skip links, header elements, or ARIA landmark roles.</h2>
+				<p>WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124,H69</p>
+				<pre> (select with "")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: If this Web page is not part of a linear process, check that there is more than one way of locating this Web page within a set of Web pages.</h2>
+				<p>WCAG2AA.Principle2.Guideline2_4.2_4_5.G125,G64,G63,G161,G126,G185</p>
+				<pre> (select with "")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that headings and labels describe topic or purpose.</h2>
+				<p>WCAG2AA.Principle2.Guideline2_4.2_4_6.G130,G131</p>
+				<pre> (select with "")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that there is at least one mode of operation where the keyboard focus indicator can be visually located on user interface controls.</h2>
+				<p>WCAG2AA.Principle2.Guideline2_4.2_4_7.G149,G165,G195,C15,SCR31</p>
+				<pre> (select with "")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that all functionality that uses multipoint or path-based gestures for operation can be operated with a single pointer without a path-based gesture, unless a multipoint or path-based gesture is essential.</h2>
+				<p>WCAG2AA.Principle2.Guideline2_5.2_5_1.</p>
+				<pre> (select with "")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that for functionality that can be operated using a single pointer, at least one of the following is true:         No Down-Event: The down-event of the pointer is not used to execute any part of the function;         Abort or Undo: Completion of the function is on the up-event, and a mechanism is available to abort the function before completion or to undo the function after completion;         Up Reversal: The up-event reverses any outcome of the preceding down-event;         Essential: Completing the function on the down-event is essential.</h2>
+				<p>WCAG2AA.Principle2.Guideline2_5.2_5_2.</p>
+				<pre> (select with "")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that for user interface components with labels that include text or images of text, the name contains the text that is presented visually.</h2>
+				<p>WCAG2AA.Principle2.Guideline2_5.2_5_3.F96</p>
+				<pre> (select with "")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that functionality that can be operated by device motion or user motion can also be operated by user interface components and responding to the motion can be disabled to prevent accidental actuation, except when:              Supported Interface: The motion is used to operate functionality through an accessibility supported interface;         Essential: The motion is essential for the function and doing so would invalidate the activity.     </h2>
+				<p>WCAG2AA.Principle2.Guideline2_5.2_5_4.</p>
+				<pre> (select with "")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Ensure that any change in language is marked using the lang and/or xml:lang attribute on an element, as appropriate.</h2>
+				<p>WCAG2AA.Principle3.Guideline3_1.3_1_2.H58</p>
+				<pre> (select with "")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that navigational mechanisms that are repeated on multiple Web pages occur in the same relative order each time they are repeated, unless a change is initiated by the user.</h2>
+				<p>WCAG2AA.Principle3.Guideline3_2.3_2_3.G61</p>
+				<pre> (select with "")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that components that have the same functionality within this Web page are identified consistently in the set of Web pages to which it belongs.</h2>
+				<p>WCAG2AA.Principle3.Guideline3_2.3_2_4.G197</p>
+				<pre> (select with "")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that status messages can be programmatically determined through role or properties such that they can be presented to the user by assistive technologies without receiving focus.</h2>
+				<p>WCAG2AA.Principle4.Guideline4_1.4_1_3.</p>
+				<pre> (select with "")</pre>
+			</li>
+		</ul>
+
+	</div>
+
+</body>
+</html>

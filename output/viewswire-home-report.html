@@ -1,0 +1,470 @@
+
+<style>
+    select{
+      background: #eee;
+      padding: 15px 0;
+      width: 200px;
+      font-size: 18px;
+      margin: 0 auto;
+      display: block;
+      border: 0;
+      border-bottom: 1px solid #000;
+    }
+    .top-wrapper{
+      background: #eee;
+    }
+    .item-container{
+      max-width: 800px;
+      margin: 0 auto;
+      margin-bottom: 50px;
+    }
+</style>
+<script>
+    function changeViewClass(classname, css) {
+      var divsToHide = document.getElementsByClassName(classname); 
+      for(var i = 0; i < divsToHide.length; i++){
+          divsToHide[i].style.display = css; 
+      }
+    }
+    function handlechange(){
+      const e = document.getElementById("viewFilter");
+      changeViewClass("result", "none")
+      changeViewClass(e.options[e.selectedIndex].value, "block")
+      changeViewClass("count", "inline-block")
+      
+    }
+    window.onload = function(){
+      const e = document.getElementById("viewFilter");
+      e.addEventListener("change", handlechange);
+    }
+</script>
+<div class="top-wrapper">
+  <div class="item-container">
+    <select id="viewFilter">
+        <option value="result">All</option>
+        <option value="error">Error</option>
+        <option value="notice">Notices</option>
+        <option value="warning">Warnings</option>
+    </select>
+  </div>
+</div><!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8"/>
+	<title>Accessibility Report For "https://www.eiu.com/login.aspx?returnURL=https://www.eiu.com/viewswire/index" (Fri Jan 22 2021 21:12:52 GMT+0530 (India Standard Time))</title>
+
+	<style>
+
+		html, body {
+			margin: 0;
+			padding: 0;
+			background-color: #fff;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 16px;
+			line-height: 22px;
+			color: #333;
+		}
+		li {
+			margin-bottom: 15px;
+		}
+		h1, h2, p, pre, ul {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		h1 {
+			margin-bottom: 10px;
+			font-size: 24px;
+			line-height: 24px;
+		}
+		h2 {
+			font-size: 16px;
+		}
+		pre {
+			white-space: pre-wrap;
+			overflow: auto;
+		}
+
+		.page {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 25px;
+		}
+
+		.counts {
+			margin-top: 30px;
+			font-size: 20px;
+		}
+		.count {
+			display: inline-block;
+			padding: 5px;
+			border-radius: 5px;
+			border: 1px solid #eee;
+		}
+
+		.clean-list {
+			margin-left: 0;
+			padding-left: 0;
+			list-style: none;
+		}
+		.results-list {
+			margin-top: 30px;
+		}
+
+		.result {
+			padding: 10px;
+			border-radius: 5px;
+			border: 1px solid #eee;
+		}
+		.error {
+			background-color: #fdd;
+			border-color: #ff9696;
+		}
+		.warning {
+			background-color: #ffd;
+			border-color: #e7c12b;
+		}
+		.notice {
+			background-color: #eef4ff;
+			border-color: #b6d0ff;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<div class="page">
+
+		<h1>Accessibility Report For "https://www.eiu.com/login.aspx?returnURL=https://www.eiu.com/viewswire/index"</h1>
+		<p>Generated at: Fri Jan 22 2021 21:12:52 GMT+0530 (India Standard Time)</p>
+
+		<p class="counts">
+			<span class="count error">4 errors</span>
+			<span class="count warning">8 warnings</span>
+			<span class="count notice">50 notices</span>
+		</p>
+
+		<ul class="clean-list results-list">
+			<li class="result notice">
+				<h2>Notice: Check that the title element describes the document.</h2>
+				<p>WCAG2AA.Principle2.Guideline2_4.2_4_2.H25.2</p>
+				<pre>&lt;title&gt;
+	Log in - The Economist Intell...&lt;/title&gt; (select with "#Head1 &gt; title")</pre>
+			</li>
+			<li class="result warning">
+				<h2>Warning: This element&#39;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 3:1.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_4.1_4_3.G145.BgImage</p>
+				<pre>&lt;h1&gt;The Economist Intelligence Unit...&lt;/h1&gt; (select with "#BodyTag &gt; header &gt; h1")</pre>
+			</li>
+			<li class="result error">
+				<h2>Error: Anchor element found with a valid href attribute, but no link content has been supplied.</h2>
+				<p>WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent</p>
+				<pre>&lt;a class=&quot;back&quot; href=&quot;http://www.eiu.com/&quot; onclick=&quot;s_objectID=&amp;quot;http://www.eiu.com/_1&amp;quot;;return this.s_oc?this.s_oc(e):true&quot;&gt;&lt;/a&gt; (select with "#BodyTag &gt; header &gt; h1 &gt; a")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the link text combined with programmatically determined link context identifies the purpose of the link.</h2>
+				<p>WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81</p>
+				<pre>&lt;a class=&quot;back&quot; href=&quot;http://www.eiu.com/&quot; onclick=&quot;s_objectID=&amp;quot;http://www.eiu.com/_1&amp;quot;;return this.s_oc?this.s_oc(e):true&quot;&gt;&lt;/a&gt; (select with "#BodyTag &gt; header &gt; h1 &gt; a")</pre>
+			</li>
+			<li class="result warning">
+				<h2>Warning: This element&#39;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.BgImage</p>
+				<pre>&lt;h2&gt;Log in&lt;/h2&gt; (select with "#portal-login &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; h2")</pre>
+			</li>
+			<li class="result error">
+				<h2>Error: This form does not contain a submit button, which creates issues for those who cannot submit the form using the keyboard. Submit buttons are INPUT elements with type attribute &quot;submit&quot; or &quot;image&quot;, or BUTTON elements with type &quot;submit&quot; or omitted/invalid.</h2>
+				<p>WCAG2AA.Principle3.Guideline3_2.3_2_2.H32.2</p>
+				<pre>&lt;form name=&quot;loginform&quot; method=&quot;post&quot; action=&quot;login.aspx?returnURL=https%3a%2f%2fwww.eiu.com%2fviewswire%2findex&quot; id=&quot;loginform&quot; autocomplete=&quot;off&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;__V...&lt;/form&gt; (select with "#loginform")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: If an input error is automatically detected in this form, check that the item(s) in error are identified and the error(s) are described to the user in text.</h2>
+				<p>WCAG2AA.Principle3.Guideline3_3.3_3_1.G83,G84,G85</p>
+				<pre>&lt;form name=&quot;loginform&quot; method=&quot;post&quot; action=&quot;login.aspx?returnURL=https%3a%2f%2fwww.eiu.com%2fviewswire%2findex&quot; id=&quot;loginform&quot; autocomplete=&quot;off&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;__V...&lt;/form&gt; (select with "#loginform")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that descriptive labels or instructions (including for required fields) are provided for user input in this form.</h2>
+				<p>WCAG2AA.Principle3.Guideline3_3.3_3_2.G131,G89,G184,H90</p>
+				<pre>&lt;form name=&quot;loginform&quot; method=&quot;post&quot; action=&quot;login.aspx?returnURL=https%3a%2f%2fwww.eiu.com%2fviewswire%2findex&quot; id=&quot;loginform&quot; autocomplete=&quot;off&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;__V...&lt;/form&gt; (select with "#loginform")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that this form provides suggested corrections to errors in user input, unless it would jeopardize the security or purpose of the content.</h2>
+				<p>WCAG2AA.Principle3.Guideline3_3.3_3_3.G177</p>
+				<pre>&lt;form name=&quot;loginform&quot; method=&quot;post&quot; action=&quot;login.aspx?returnURL=https%3a%2f%2fwww.eiu.com%2fviewswire%2findex&quot; id=&quot;loginform&quot; autocomplete=&quot;off&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;__V...&lt;/form&gt; (select with "#loginform")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: If this form would bind a user to a financial or legal commitment, modify/delete user-controllable data, or submit test responses, ensure that submissions are either reversible, checked for input errors, and/or confirmed by the user.</h2>
+				<p>WCAG2AA.Principle3.Guideline3_3.3_3_4.G98,G99,G155,G164,G168.LegalForms</p>
+				<pre>&lt;form name=&quot;loginform&quot; method=&quot;post&quot; action=&quot;login.aspx?returnURL=https%3a%2f%2fwww.eiu.com%2fviewswire%2findex&quot; id=&quot;loginform&quot; autocomplete=&quot;off&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;__V...&lt;/form&gt; (select with "#loginform")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the input field serves a purpose identified in the Input Purposes for User Interface Components section; and that the content is implemented using technologies with support for identifying the expected meaning for form input data.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_3.1_3_5.H98</p>
+				<pre>&lt;input type=&quot;hidden&quot; name=&quot;__VIEWSTATE&quot; id=&quot;__VIEWSTATE&quot; value=&quot;oR3csF3IELimOY2K5YWiAiOXlVyhYpjrrJ6YFyn0Mc9TLF59lN4tGjddvWico5J4hwg5LZrCcMA2KkDu9ArT6mIKjVKpoIdkXAZPAk/F2iUQ2ArKwN+7s8CvbtySJ8nkQOYWEtvBqayWXilIj/DKEm3xrQ1RRWbABu8fP7v9vCFhmiAzyHNLVS08eK... (select with "#__VIEWSTATE")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that a change of context does not occur when this input field receives focus.</h2>
+				<p>WCAG2AA.Principle3.Guideline3_2.3_2_1.G107</p>
+				<pre>&lt;input type=&quot;hidden&quot; name=&quot;__VIEWSTATE&quot; id=&quot;__VIEWSTATE&quot; value=&quot;oR3csF3IELimOY2K5YWiAiOXlVyhYpjrrJ6YFyn0Mc9TLF59lN4tGjddvWico5J4hwg5LZrCcMA2KkDu9ArT6mIKjVKpoIdkXAZPAk/F2iUQ2ArKwN+7s8CvbtySJ8nkQOYWEtvBqayWXilIj/DKEm3xrQ1RRWbABu8fP7v9vCFhmiAzyHNLVS08eK... (select with "#__VIEWSTATE")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the input field serves a purpose identified in the Input Purposes for User Interface Components section; and that the content is implemented using technologies with support for identifying the expected meaning for form input data.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_3.1_3_5.H98</p>
+				<pre>&lt;input type=&quot;hidden&quot; name=&quot;__VIEWSTATEGENERATOR&quot; id=&quot;__VIEWSTATEGENERATOR&quot; value=&quot;C2EE9ABB&quot;&gt; (select with "#__VIEWSTATEGENERATOR")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that a change of context does not occur when this input field receives focus.</h2>
+				<p>WCAG2AA.Principle3.Guideline3_2.3_2_1.G107</p>
+				<pre>&lt;input type=&quot;hidden&quot; name=&quot;__VIEWSTATEGENERATOR&quot; id=&quot;__VIEWSTATEGENERATOR&quot; value=&quot;C2EE9ABB&quot;&gt; (select with "#__VIEWSTATEGENERATOR")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the input field serves a purpose identified in the Input Purposes for User Interface Components section; and that the content is implemented using technologies with support for identifying the expected meaning for form input data.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_3.1_3_5.H98</p>
+				<pre>&lt;input type=&quot;hidden&quot; name=&quot;__VIEWSTATEENCRYPTED&quot; id=&quot;__VIEWSTATEENCRYPTED&quot; value=&quot;&quot;&gt; (select with "#__VIEWSTATEENCRYPTED")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that a change of context does not occur when this input field receives focus.</h2>
+				<p>WCAG2AA.Principle3.Guideline3_2.3_2_1.G107</p>
+				<pre>&lt;input type=&quot;hidden&quot; name=&quot;__VIEWSTATEENCRYPTED&quot; id=&quot;__VIEWSTATEENCRYPTED&quot; value=&quot;&quot;&gt; (select with "#__VIEWSTATEENCRYPTED")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the input field serves a purpose identified in the Input Purposes for User Interface Components section; and that the content is implemented using technologies with support for identifying the expected meaning for form input data.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_3.1_3_5.H98</p>
+				<pre>&lt;input type=&quot;hidden&quot; name=&quot;__EVENTVALIDATION&quot; id=&quot;__EVENTVALIDATION&quot; value=&quot;JDL945TMC3Pvx4li61yVy67hrY7rVZUgwK4EkufV5Ppz/gFI8tz/dn0SGj7yeDwOdxeiq7XlogZ5q2UuY9x/mPUz+9fU+O5GMz7Nl2AMdtSPneRe&quot;&gt; (select with "#__EVENTVALIDATION")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that a change of context does not occur when this input field receives focus.</h2>
+				<p>WCAG2AA.Principle3.Guideline3_2.3_2_1.G107</p>
+				<pre>&lt;input type=&quot;hidden&quot; name=&quot;__EVENTVALIDATION&quot; id=&quot;__EVENTVALIDATION&quot; value=&quot;JDL945TMC3Pvx4li61yVy67hrY7rVZUgwK4EkufV5Ppz/gFI8tz/dn0SGj7yeDwOdxeiq7XlogZ5q2UuY9x/mPUz+9fU+O5GMz7Nl2AMdtSPneRe&quot;&gt; (select with "#__EVENTVALIDATION")</pre>
+			</li>
+			<li class="result warning">
+				<h2>Warning: This element&#39;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.BgImage</p>
+				<pre>&lt;label for=&quot;username&quot; id=&quot;lbForUsername&quot;&gt;Username or e-mail address&lt;/label&gt; (select with "#lbForUsername")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the input field serves a purpose identified in the Input Purposes for User Interface Components section; and that the content is implemented using technologies with support for identifying the expected meaning for form input data.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_3.1_3_5.H98</p>
+				<pre>&lt;input name=&quot;username&quot; type=&quot;text&quot; id=&quot;username&quot; size=&quot;50&quot; aria-describedby=&quot;usernameFieldValidator&quot; autocomplete=&quot;off&quot; aria-invalid=&quot;true&quot;&gt; (select with "#username")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that a change of context does not occur when this input field receives focus.</h2>
+				<p>WCAG2AA.Principle3.Guideline3_2.3_2_1.G107</p>
+				<pre>&lt;input name=&quot;username&quot; type=&quot;text&quot; id=&quot;username&quot; size=&quot;50&quot; aria-describedby=&quot;usernameFieldValidator&quot; autocomplete=&quot;off&quot; aria-invalid=&quot;true&quot;&gt; (select with "#username")</pre>
+			</li>
+			<li class="result warning">
+				<h2>Warning: This element&#39;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.BgImage</p>
+				<pre>&lt;label for=&quot;password&quot; id=&quot;lbForPassword&quot; aria-describedby=&quot;errMsg&quot;&gt;Password&lt;/label&gt; (select with "#lbForPassword")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the input field serves a purpose identified in the Input Purposes for User Interface Components section; and that the content is implemented using technologies with support for identifying the expected meaning for form input data.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_3.1_3_5.H98</p>
+				<pre>&lt;input name=&quot;password&quot; type=&quot;password&quot; id=&quot;password&quot; size=&quot;50&quot; autocomplete=&quot;off&quot; aria-describedby=&quot;passwordFieldValidator&quot; aria-invalid=&quot;true&quot;&gt; (select with "#password")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that a change of context does not occur when this input field receives focus.</h2>
+				<p>WCAG2AA.Principle3.Guideline3_2.3_2_1.G107</p>
+				<pre>&lt;input name=&quot;password&quot; type=&quot;password&quot; id=&quot;password&quot; size=&quot;50&quot; autocomplete=&quot;off&quot; aria-describedby=&quot;passwordFieldValidator&quot; aria-invalid=&quot;true&quot;&gt; (select with "#password")</pre>
+			</li>
+			<li class="result warning">
+				<h2>Warning: This element&#39;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.BgImage</p>
+				<pre>&lt;a href=&quot;https://www.eiu.com/support/ForgotPassword.aspx&quot; onclick=&quot;s_objectID=&amp;quot;https://www.eiu.com/support/ForgotPassword.aspx_1&amp;quot;;return this.s_oc?this.s_oc(e):true&quot;&gt;Forgotten your password?&lt;/a&gt; (select with "#loginform &gt; a")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the link text combined with programmatically determined link context identifies the purpose of the link.</h2>
+				<p>WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81</p>
+				<pre>&lt;a href=&quot;https://www.eiu.com/support/ForgotPassword.aspx&quot; onclick=&quot;s_objectID=&amp;quot;https://www.eiu.com/support/ForgotPassword.aspx_1&amp;quot;;return this.s_oc?this.s_oc(e):true&quot;&gt;Forgotten your password?&lt;/a&gt; (select with "#loginform &gt; a")</pre>
+			</li>
+			<li class="result error">
+				<h2>Error: This buttoninput element does not have a name available to an accessibility API. Valid names are: value undefined, aria-label undefined, aria-labelledby undefined.</h2>
+				<p>WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.InputButton.Name</p>
+				<pre>&lt;input type=&quot;button&quot; id=&quot;btn-login-portal&quot; value=&quot;&quot;&gt; (select with "#btn-login-portal")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the input field serves a purpose identified in the Input Purposes for User Interface Components section; and that the content is implemented using technologies with support for identifying the expected meaning for form input data.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_3.1_3_5.H98</p>
+				<pre>&lt;input type=&quot;button&quot; id=&quot;btn-login-portal&quot; value=&quot;&quot;&gt; (select with "#btn-login-portal")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that a change of context does not occur when this input field receives focus.</h2>
+				<p>WCAG2AA.Principle3.Guideline3_2.3_2_1.G107</p>
+				<pre>&lt;input type=&quot;button&quot; id=&quot;btn-login-portal&quot; value=&quot;&quot;&gt; (select with "#btn-login-portal")</pre>
+			</li>
+			<li class="result warning">
+				<h2>Warning: This element&#39;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.BgImage</p>
+				<pre>&lt;h2&gt;Registration available&lt;/h2&gt; (select with "#canregisterdiv &gt; h2")</pre>
+			</li>
+			<li class="result warning">
+				<h2>Warning: This element&#39;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.BgImage</p>
+				<pre>&lt;p&gt;By creating a  &lt;a href=&quot;/public...&lt;/p&gt; (select with "#canregisterdiv &gt; p")</pre>
+			</li>
+			<li class="result warning">
+				<h2>Warning: This element&#39;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 4.5:1.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.BgImage</p>
+				<pre>&lt;a href=&quot;/public/signup.aspx?mode=register&quot; onclick=&quot;s_objectID=&amp;quot;https://www.eiu.com/public/signup.aspx?mode=register_1&amp;quot;;return this.s_oc?this.s_oc(e):true&quot;&gt;registration profile &lt;/a&gt; (select with "#canregisterdiv &gt; p &gt; a")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the link text combined with programmatically determined link context identifies the purpose of the link.</h2>
+				<p>WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81</p>
+				<pre>&lt;a href=&quot;/public/signup.aspx?mode=register&quot; onclick=&quot;s_objectID=&amp;quot;https://www.eiu.com/public/signup.aspx?mode=register_1&amp;quot;;return this.s_oc?this.s_oc(e):true&quot;&gt;registration profile &lt;/a&gt; (select with "#canregisterdiv &gt; p &gt; a")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the link text combined with programmatically determined link context identifies the purpose of the link.</h2>
+				<p>WCAG2AA.Principle2.Guideline2_4.2_4_4.H77,H78,H79,H80,H81</p>
+				<pre>&lt;a href=&quot;http://www.eiu.com/public/marketing/ContactUs.aspx&quot; onclick=&quot;s_objectID=&amp;quot;http://www.eiu.com/public/marketing/ContactUs.aspx_1&amp;quot;;return this.s_oc?this.s_oc(e):true&quot;&gt;contact us&lt;/a&gt; (select with "#contactus &gt; a")</pre>
+			</li>
+			<li class="result error">
+				<h2>Error: Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_1.1_1_1.H37</p>
+				<pre>&lt;img src=&quot;https://store.eiu.com/Services/OmnitureStatus.ashx?oid=&quot; style=&quot;visibility:hidden;&quot;&gt; (select with "#BodyTag &gt; img")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: If this image cannot be fully described in a short text alternative, ensure a long text alternative is also available, such as in the body text or through a link.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_1.1_1_1.G73,G74</p>
+				<pre>&lt;img src=&quot;https://store.eiu.com/Services/OmnitureStatus.ashx?oid=&quot; style=&quot;visibility:hidden;&quot;&gt; (select with "#BodyTag &gt; img")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the title attribute of this element contains text that identifies the frame.</h2>
+				<p>WCAG2AA.Principle2.Guideline2_4.2_4_1.H64.2</p>
+				<pre>&lt;iframe name=&quot;_hjRemoteVarsFrame&quot; title=&quot;_hjRemoteVarsFrame&quot; id=&quot;_hjRemoteVarsFrame&quot; src=&quot;https://vars.hotjar.com/box-469cf41adb11dc78be68c1ae7f9457a4.html&quot; style=&quot;display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !i... (select with "#_hjRemoteVarsFrame")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the content is ordered in a meaningful sequence when linearised, such as when style sheets are disabled.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_3.1_3_2.G57</p>
+				<pre> (select with "")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Where instructions are provided for understanding the content, do not rely on sensory characteristics alone (such as shape, size or location) to describe objects.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_3.1_3_3.G96</p>
+				<pre> (select with "")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that content does not restrict its view and operation to a single display orientation, such as portrait or landscape, unless a specific display orientation is essential.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_3.1_3_4.</p>
+				<pre> (select with "")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that any information conveyed using colour alone is also available in text, or through other visual cues.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_4.1_4_1.G14,G182</p>
+				<pre> (select with "")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that text can be resized without assistive technology up to 200 percent without loss of content or functionality.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_4.1_4_4.G142</p>
+				<pre> (select with "")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: If the technologies being used can achieve the visual presentation, check that text is used to convey information rather than images of text, except when the image of text is essential to the information being conveyed, or can be visually customised to the user&#39;s requirements.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_4.1_4_5.G140,C22,C30.AALevel</p>
+				<pre> (select with "")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that content can be presented without loss of information or functionality, and without requiring scrolling in two dimensions for:     Vertical scrolling content at a width equivalent to 320 CSS pixels;     Horizontal scrolling content at a height equivalent to 256 CSS pixels;     Except for parts of the content which require two-dimensional layout for usage or meaning.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_4.1_4_10.C32,C31,C33,C38,SCR34,G206</p>
+				<pre> (select with "")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that the visual presentation of the following have a contrast ratio of at least 3:1 against adjacent color(s):     User Interface Components: Visual information required to identify user interface components and states, except for inactive components or where the appearance of the component is determined by the user agent and not modified by the author;     Graphical Objects: Parts of graphics required to understand the content, except when a particular presentation of graphics is essential to the information being conveyed.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_4.1_4_11.G195,G207,G18,G145,G174,F78</p>
+				<pre> (select with "")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that no loss of content or functionality occurs by setting all of the following and by changing no other style property:              Line height (line spacing) to at least 1.5 times the font size;         Spacing following paragraphs to at least 2 times the font size;         Letter spacing (tracking) to at least 0.12 times the font size;         Word spacing to at least 0.16 times the font size.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_4.1_4_12.C36,C35</p>
+				<pre> (select with "")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that where receiving and then removing pointer hover or keyboard focus triggers additional content to become visible and then hidden, the following are true:              Dismissable: A mechanism is available to dismiss the additional content without moving pointer hover or keyboard focus, unless the additional content communicates an input error or does not obscure or replace other content;         Hoverable: If pointer hover can trigger the additional content, then the pointer can be moved over the additional content without the additional content disappearing;         Persistent: The additional content remains visible until the hover or focus trigger is removed, the user dismisses it, or its information is no longer valid.</h2>
+				<p>WCAG2AA.Principle1.Guideline1_4.1_4_13.F95</p>
+				<pre> (select with "")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that if a keyboard shortcut is implemented in content using only letter (including upper- and lower-case letters), punctuation, number, or symbol characters, then at least one of the following is true:              Turn off: A mechanism is available to turn the shortcut off;         Remap: A mechanism is available to remap the shortcut to use one or more non-printable keyboard characters (e.g. Ctrl, Alt, etc);         Active only on focus: The keyboard shortcut for a user interface component is only active when that component has focus.     </h2>
+				<p>WCAG2AA.Principle2.Guideline2_1.2_1_4.</p>
+				<pre> (select with "")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: If any part of the content moves, scrolls or blinks for more than 5 seconds, or auto-updates, check that there is a mechanism available to pause, stop, or hide the content.</h2>
+				<p>WCAG2AA.Principle2.Guideline2_2.2_2_2.SCR33,SCR22,G187,G152,G186,G191</p>
+				<pre> (select with "")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that no component of the content flashes more than three times in any 1-second period, or that the size of any flashing area is sufficiently small.</h2>
+				<p>WCAG2AA.Principle2.Guideline2_3.2_3_1.G19,G176</p>
+				<pre> (select with "")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Ensure that any common navigation elements can be bypassed; for instance, by use of skip links, header elements, or ARIA landmark roles.</h2>
+				<p>WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124,H69</p>
+				<pre> (select with "")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: If this Web page is not part of a linear process, check that there is more than one way of locating this Web page within a set of Web pages.</h2>
+				<p>WCAG2AA.Principle2.Guideline2_4.2_4_5.G125,G64,G63,G161,G126,G185</p>
+				<pre> (select with "")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that headings and labels describe topic or purpose.</h2>
+				<p>WCAG2AA.Principle2.Guideline2_4.2_4_6.G130,G131</p>
+				<pre> (select with "")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that there is at least one mode of operation where the keyboard focus indicator can be visually located on user interface controls.</h2>
+				<p>WCAG2AA.Principle2.Guideline2_4.2_4_7.G149,G165,G195,C15,SCR31</p>
+				<pre> (select with "")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that all functionality that uses multipoint or path-based gestures for operation can be operated with a single pointer without a path-based gesture, unless a multipoint or path-based gesture is essential.</h2>
+				<p>WCAG2AA.Principle2.Guideline2_5.2_5_1.</p>
+				<pre> (select with "")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that for functionality that can be operated using a single pointer, at least one of the following is true:         No Down-Event: The down-event of the pointer is not used to execute any part of the function;         Abort or Undo: Completion of the function is on the up-event, and a mechanism is available to abort the function before completion or to undo the function after completion;         Up Reversal: The up-event reverses any outcome of the preceding down-event;         Essential: Completing the function on the down-event is essential.</h2>
+				<p>WCAG2AA.Principle2.Guideline2_5.2_5_2.</p>
+				<pre> (select with "")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that for user interface components with labels that include text or images of text, the name contains the text that is presented visually.</h2>
+				<p>WCAG2AA.Principle2.Guideline2_5.2_5_3.F96</p>
+				<pre> (select with "")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that functionality that can be operated by device motion or user motion can also be operated by user interface components and responding to the motion can be disabled to prevent accidental actuation, except when:              Supported Interface: The motion is used to operate functionality through an accessibility supported interface;         Essential: The motion is essential for the function and doing so would invalidate the activity.     </h2>
+				<p>WCAG2AA.Principle2.Guideline2_5.2_5_4.</p>
+				<pre> (select with "")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Ensure that any change in language is marked using the lang and/or xml:lang attribute on an element, as appropriate.</h2>
+				<p>WCAG2AA.Principle3.Guideline3_1.3_1_2.H58</p>
+				<pre> (select with "")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that navigational mechanisms that are repeated on multiple Web pages occur in the same relative order each time they are repeated, unless a change is initiated by the user.</h2>
+				<p>WCAG2AA.Principle3.Guideline3_2.3_2_3.G61</p>
+				<pre> (select with "")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that components that have the same functionality within this Web page are identified consistently in the set of Web pages to which it belongs.</h2>
+				<p>WCAG2AA.Principle3.Guideline3_2.3_2_4.G197</p>
+				<pre> (select with "")</pre>
+			</li>
+			<li class="result notice">
+				<h2>Notice: Check that status messages can be programmatically determined through role or properties such that they can be presented to the user by assistive technologies without receiving focus.</h2>
+				<p>WCAG2AA.Principle4.Guideline4_1.4_1_3.</p>
+				<pre> (select with "")</pre>
+			</li>
+		</ul>
+
+	</div>
+
+</body>
+</html>
